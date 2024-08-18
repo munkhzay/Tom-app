@@ -1,0 +1,59 @@
+.tomcv {
+}
+.head {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-right: 50px;
+}
+.headcontaint {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.tomContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.tom {
+  width: 200px;
+  height: 200px;
+}
+.tomcontent {
+  display: flex;
+  flex-direction: row;
+  padding: 32px;
+}
+.part2 {
+  padding: 5px;
+  background-color: darkgray;
+  border-radius: 10px;
+  color: black;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+}
+.part2para {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  text-align: start;
+}
+.part2content {
+  display: flex;
+}
+.cv2 {
+  padding: 32px;
+  background-color: #111827;
+  text-align: center;
+}
+.code {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
