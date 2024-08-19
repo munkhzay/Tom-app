@@ -1,10 +1,10 @@
 import styles from "@/component/tomSty.module.css";
-
+import { Shadow, Locationsvg, Actions, hi } from "@/component/Icon";
 export const Tomintroduction = () => {
   return (
     <div>
       <h1>Hi, Im Tom </h1>
-      <p>
+      <p className={styles.headtext}>
         I specialize in full stack development, particulary with React.js and
         Node .js. My main goal is to create exceptional dijital experiences that
         are fast, visusally appealing, and accessible to everyone. With over
@@ -17,8 +17,14 @@ export const Tomintroduction = () => {
 export const Location = () => {
   return (
     <div>
-      <p>Ulaanbaatar Mongolia</p>
-      <p>Available for new project</p>
+      <div className={styles.flex}>
+        <Locationsvg></Locationsvg>
+        <p className={styles.headtext}>Ulaanbaatar Mongolia</p>
+      </div>
+      <div className={styles.flex}>
+        <Shadow></Shadow>
+        <p className={styles.headtext}>Available for new project</p>
+      </div>
     </div>
   );
 };
