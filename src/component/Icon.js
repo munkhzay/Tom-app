@@ -80,8 +80,8 @@ export const Shadow = () => {
 export const Locationsvg = () => {
   return (
     <svg
-      width="24"
-      height="24"
+      width="24px"
+      height="24px"
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ export const Locationsvg = () => {
 };
 export const Actions = () => {
   return (
-    <div className="flexgit">
+    <div className="flex items-center">
       <svg
         width="24"
         height="24"
@@ -114,42 +114,37 @@ export const Actions = () => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
+          d="M15 22V18C15.1392 16.7473 14.78 15.4901 14 14.5C17 14.5 20 12.5 20 9C20.08 7.75 19.73 6.52 19 5.5C19.28 4.35 19.28 3.15 19 2C19 2 18 2 16 3.5C13.36 3 10.64 3 8.00004 3.5C6.00004 2 5.00004 2 5.00004 2C4.70004 3.15 4.70004 4.35 5.00004 5.5C4.27191 6.51588 3.91851 7.75279 4.00004 9C4.00004 12.5 7.00004 14.5 10 14.5C9.61004 14.99 9.32004 15.55 9.15004 16.15C8.98004 16.75 8.93004 17.38 9.00004 18V22"
           stroke="#4B5563"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
         <path
-          d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+          d="M9 18C4.49 20 4 16 2 16"
           stroke="#4B5563"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
       </svg>
+
       <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
+        width="36"
+        height="36"
+        viewBox="0 0 36 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M20 10C20 16 12 22 12 22C12 22 4 16 4 10C4 7.87827 4.84285 5.84344 6.34315 4.34315C7.84344 2.84285 9.87827 2 12 2C14.1217 2 16.1566 2.84285 17.6569 4.34315C19.1571 5.84344 20 7.87827 20 10Z"
-          stroke="#4B5563"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        />
-        <path
-          d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+          d="M28 9.99999C28 9.99999 27.3 12.1 26 13.4C27.6 23.4 16.6 30.7 8 25C10.2 25.1 12.4 24.4 14 23C9 21.5 6.5 15.6 9 11C11.2 13.6 14.6 15.1 18 15C17.1 10.8 22 8.39999 25 11.2C26.1 11.2 28 9.99999 28 9.99999Z"
           stroke="#4B5563"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
         />
       </svg>
+
       <svg
         width="24"
         height="24"
@@ -215,8 +210,8 @@ export const Hi = () => {
 export const TOM = () => {
   return (
     <svg
-      width="74"
-      height="23"
+      width="76px"
+      height="36px"
       viewBox="0 0 74 23"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -230,34 +225,36 @@ export const TOM = () => {
 };
 export const Kebab = () => {
   return (
-    <svg
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M4 12H20"
-        stroke="#4B5563"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M4 6H20"
-        stroke="#4B5563"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M4 18H20"
-        stroke="#4B5563"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-    </svg>
+    <div className="sm:block lg:hidden">
+      <svg
+        width="36px"
+        height="36px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 12H20"
+          stroke="#4B5563"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 6H20"
+          stroke="#4B5563"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M4 18H20"
+          stroke="#4B5563"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
   );
 };

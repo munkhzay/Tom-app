@@ -10,12 +10,14 @@ const Headtext = (props) => {
 
 export const CV = () => {
   return (
-    <div className={styles.head}>
-      {heads.map((head) => {
-        return <Headtext text={head}></Headtext>;
-      })}{" "}
-      <Shadow className={styles.headshadow}> </Shadow>
-      <p className={styles.down}>Downloud CV</p>
+    <div className="sm: hidden lg:block">
+      <div className="flex flex-row gap-5 sm:max-hidden ">
+        {heads.map((head) => {
+          return <Headtext text={head}></Headtext>;
+        })}{" "}
+        <Shadow className={styles.headshadow}> </Shadow>
+        <p className={styles.down}>Downloud CV</p>
+      </div>
     </div>
   );
 };

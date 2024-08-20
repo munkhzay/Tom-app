@@ -63,13 +63,13 @@
   display: flex;
   justify-content: space-between;
 }
-.part2para {
+/* .part2para {
   display: flex;
   flex-direction: column;
   align-content: space-between;
   text-align: start;
   width: 50%;
-}
+} */
 .part2content {
   /* display: grid;
   grid-row: auto, auto; */

@@ -1,8 +1,8 @@
 import styles from "@/component/tomSty.module.css";
-import JsIcon from "./Icons/JsIcon";
+import { JsIcon, Typesc } from "./Icons/JsIcon";
 let apps = [
   { text: "JavaScript", img: <JsIcon /> },
-  { text: "Typescript", img: "jhbfhv" },
+  { text: "Typescript", img: <Typesc /> },
   { text: "React", img: "jhbfhv" },
   { text: "Next.js", img: "jhbfhv" },
   { text: "Node.js", img: "jhbfhv" },
@@ -29,7 +29,7 @@ const Tool = (props) => {
 };
 export const Code = () => {
   return (
-    <div className={styles.code}>
+    <div className="flex flex-wrap gap-6">
       {apps.map((app) => {
         return <Tool src={app.img} text={app.text}></Tool>;
       })}
