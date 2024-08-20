@@ -4,6 +4,7 @@ import { Tomintroduction, Location, Tomcareer } from "@/component/Para";
 // import { Actions } from "@/component/Icon";
 import { Code } from "@/component/Tools";
 import { Actions, TOM, Kebab } from "@/component/Icon";
+import { Work } from "@/component/Upwork";
 
 const Home = () => {
   return (
@@ -53,6 +54,17 @@ const Home = () => {
         <div className="mt-4 px-8 lg:mt-12">
           <Code></Code>
         </div>
+      </div>
+      <div>
+        <div className="mb-6 lg:mb-12">
+          <a className="text-sm font-medium text-gray-600 p-2 rounded-xl border-gray-200 bg-gray-200 border-2 ">
+            Experience
+          </a>
+        </div>
+        <div className=" text-center font-normal text-gray-600 text-lg">
+          Here is a quick summary of my most recent experiences:
+        </div>
+        <Work></Work>
       </div>
     </div>
   );

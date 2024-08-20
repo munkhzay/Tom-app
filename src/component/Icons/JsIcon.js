@@ -1,4 +1,4 @@
-const JsIcon = () => {
+export const JsIcon = () => {
   return (
     <svg
       width="64"
@@ -15,7 +15,6 @@ const JsIcon = () => {
     </svg>
   );
 };
-export default JsIcon;
 
 export const Typesc = () => {
   return (
