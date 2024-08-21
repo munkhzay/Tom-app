@@ -9,7 +9,7 @@ import { Nestjs } from "./Icons/Nestjs.icon";
 import { Socket } from "./Icons/Socket";
 import { Sass } from "./Icons/Sass";
 import { Mongo } from "./Icons/Mongo";
-import { Tailwind } from "./Icons/Tailw";
+
 import { Figma } from "./Icons/Fig";
 import { Cypress } from "./Icons/Cypress";
 

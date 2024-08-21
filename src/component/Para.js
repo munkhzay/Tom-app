@@ -1,5 +1,7 @@
 import styles from "@/component/tomSty.module.css";
-import { Shadow, Locationsvg, Actions, hi } from "@/component/Icon";
+
+import { Locationsvg } from "./location";
+import { Shadow } from "./Shadow";
 export const Tomintroduction = () => {
   return (
     <div className="gap-y-2">

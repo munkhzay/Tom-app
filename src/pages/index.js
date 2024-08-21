@@ -1,11 +1,13 @@
 import { CV } from "@/component/tom";
-import styles from "@/component/tomSty.module.css";
 import { Tomintroduction, Location, Tomcareer } from "@/component/Para";
-// import { Actions } from "@/component/Icon";
 import { Code } from "@/component/Tools";
-import { Actions, TOM, Kebab } from "@/component/Icon";
-
+import { Actions } from "@/component/Actions";
+import { TOM } from "@/component/location";
+import { Kebab } from "@/component/Kebab";
 import { Work } from "@/component/Upwork";
+import { ProWork } from "@/component/Work";
+import { Texts } from "@/component/Text";
+import { Connect } from "@/component/Connect";
 
 const Home = () => {
   return (
@@ -27,11 +29,7 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-gray-50 text-center  py-16 px-4 lg:py-24 lg:px-20">
-        <div className="mb-6 lg:mb-12">
-          <a className="text-sm font-medium text-gray-600 p-2 rounded-xl border-gray-200 bg-gray-200 border-2 ">
-            About me
-          </a>
-        </div>
+        <Texts text={"About me"}></Texts>
         <div className="gap-y-12 lg:flex lg:">
           <div className="flex justify-center lg:w-1/2 lg:pl-8 lg:justify-start">
             <img className="w-auto h-auto mb-12 " src="Tom2.png" />
@@ -43,14 +41,10 @@ const Home = () => {
       </div>
       <div className="py-16 px-4 lg:py-24 lg:px-20">
         <div className="gap-y-4 px-8">
-          <div className="mb-4 text-center gap-y-6 ">
-            <a className="text-sm font-medium text-gray-600 py-1 px-5 rounded-xl border-gray-200 bg-gray-200 border-2 ">
-              Skills
-            </a>
-          </div>
-          <div className=" text-center font-normal text-gray-600 text-lg">
-            The skills, tools and technologies I am really good at:
-          </div>
+          <Texts
+            text={"Skills"}
+            para={"The skills, tools and technologies I am really good at:"}
+          ></Texts>
         </div>
         <div className="mt-4 px-8 lg:mt-12">
           <Code></Code>
@@ -58,17 +52,38 @@ const Home = () => {
       </div>
       <div className="bg-gray-50 py-16 px-4 lg:py-24 lg:px-20">
         <div>
-          <div className="mb-6 text-center lg:mb-12">
-            <a className="text-sm font-medium text-gray-600 p-2 rounded-xl border-gray-200 bg-gray-200 border-2 ">
-              Experience
-            </a>
-          </div>
-          <div className="mb-6 text-center font-normal text-gray-600 text-lg lg:mb-12">
-            Here is a quick summary of my most recent experiences:
-          </div>
+          <Texts
+            text={"Experience"}
+            para={"Here is a quick summary of my most recent experiences:"}
+          ></Texts>
         </div>
         <div className="">
           <Work></Work>
+        </div>
+      </div>
+      <div className="py-16 px-4 lg:py-24 lg:px-20">
+        <Texts
+          text={"Work"}
+          para={"Some of the noteworthy projects I have built:"}
+        ></Texts>
+        <ProWork></ProWork>
+      </div>
+      <div>
+        <Texts
+          text={"Get in touch"}
+          para={
+            "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect."
+          }
+        ></Texts>
+        <div>
+          <Connect></Connect>
+        </div>
+
+        <p className=" text-center font-normal text-gray-600 text-lg">
+          You may also find me on these platforms!
+        </p>
+        <div className="flex justify-center">
+          <Actions></Actions>
         </div>
       </div>
     </div>

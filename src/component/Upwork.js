@@ -48,11 +48,11 @@ const List = (props) => {
 const Name = (props) => {
   const { head, date, experience } = props;
   return (
-    <div className="lg:flex justify-between">
+    <div className="lg:flex justify-between ">
       <div>{head}</div>
-      <div className="lg:flex lg:flex-row-reverse ">
+      <div className="lg:flex lg:flex-row-reverse gap-40  ">
         <div className="mb-4 text-base font-normal text-gray-700">{date}</div>
-        <div className="mb-4 text-lg font-semibold text-gray-900">
+        <div className="mb-4 text-lg font-semibold text-gray-900 lg:text-center ">
           {experience}
         </div>
       </div>

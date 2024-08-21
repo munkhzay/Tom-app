@@ -1,5 +1,5 @@
 import styles from "@/component/tomSty.module.css";
-import { Shadow } from "@/component/Icon";
+import { Shadow } from "./Shadow";
 
 let heads = ["About", "Work", "Testimonials", "Contact"];
 
