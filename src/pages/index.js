@@ -4,6 +4,7 @@ import { Tomintroduction, Location, Tomcareer } from "@/component/Para";
 // import { Actions } from "@/component/Icon";
 import { Code } from "@/component/Tools";
 import { Actions, TOM, Kebab } from "@/component/Icon";
+
 import { Work } from "@/component/Upwork";
 
 const Home = () => {
@@ -55,16 +56,20 @@ const Home = () => {
           <Code></Code>
         </div>
       </div>
-      <div>
-        <div className="mb-6 lg:mb-12">
-          <a className="text-sm font-medium text-gray-600 p-2 rounded-xl border-gray-200 bg-gray-200 border-2 ">
-            Experience
-          </a>
+      <div className="bg-gray-50 py-16 px-4 lg:py-24 lg:px-20">
+        <div>
+          <div className="mb-6 text-center lg:mb-12">
+            <a className="text-sm font-medium text-gray-600 p-2 rounded-xl border-gray-200 bg-gray-200 border-2 ">
+              Experience
+            </a>
+          </div>
+          <div className="mb-6 text-center font-normal text-gray-600 text-lg lg:mb-12">
+            Here is a quick summary of my most recent experiences:
+          </div>
         </div>
-        <div className=" text-center font-normal text-gray-600 text-lg">
-          Here is a quick summary of my most recent experiences:
+        <div className="">
+          <Work></Work>
         </div>
-        <Work></Work>
       </div>
     </div>
   );

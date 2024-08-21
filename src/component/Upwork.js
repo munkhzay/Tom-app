@@ -1,7 +1,7 @@
-import { Upwork } from "@/component/Icon";
+import { Upwork } from "./Upworksvg";
 let datas = [
   {
-    // head: <Upwork />,
+    head: <Upwork />,
     date: "Nov 2021 - Present",
     experience: "Sr. Frontend Developer",
     skills: [
@@ -12,7 +12,7 @@ let datas = [
     ],
   },
   {
-    // head: <Upwork />,
+    head: <Upwork />,
     date: "Jul 2017 - Oct 2021",
     experience: "Team Lead",
     skills: [
@@ -23,7 +23,7 @@ let datas = [
     ],
   },
   {
-    // head: <Upwork />,
+    head: <Upwork />,
     date: "Dec 2015 - May 2017",
     experience: "Full Stack Developer",
     skills: [
@@ -32,38 +32,46 @@ let datas = [
   },
 ];
 
+// const Cvs=[{  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+//   "Ut pretium arcu et massa semper, id fringilla leo semper."
+//   "Sed quis justo ac magna.",
+//   "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",},]
+
 const List = (props) => {
   let { skill } = props;
-  return <li>{skill}</li>;
+  return (
+    <li className="px-8 text-base font-normal text-gray-700 mb-1 lg:text-center">
+      {skill}
+    </li>
+  );
 };
 const Name = (props) => {
-  const { head, date, experience, skills } = props;
+  const { head, date, experience } = props;
   return (
-    <div>
-      {/* <h1>{head}</h1> */}
-      <p>{date}</p>
-      <h1>{experience}</h1>
-      <li>{skills}</li>
-      {/* {skills.map((skill) => {
-        return <List skill={datas.skills.skill}></List>;
-      })} */}
+    <div className="lg:flex justify-between">
+      <div>{head}</div>
+      <div className="lg:flex lg:flex-row-reverse ">
+        <div className="mb-4 text-base font-normal text-gray-700">{date}</div>
+        <div className="mb-4 text-lg font-semibold text-gray-900">
+          {experience}
+        </div>
+      </div>
     </div>
   );
 };
 export const Work = () => {
   return (
-    <div>
+    <div className="lg:px-8">
       {datas.map((data) => {
         return (
-          <div>
+          <div className="p-8 bg-white rounded-xl mb-6 lg:mb-12 lg:mx-8 ">
             <Name
-              // head={data.head}
+              head={data.head}
               date={data.date}
               experience={data.experience}
-              skills={data.skills}
             ></Name>
             {data.skills.map((skill) => {
-              return <List skill={data.skills}></List>;
+              return <List skill={skill}></List>;
             })}
           </div>
         );
