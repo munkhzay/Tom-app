@@ -63,8 +63,8 @@ const Content = (props) => {
   return (
     <>
       {index === 1 ? (
-        <div className="grid grid-2  mb-12 border-slate-300 lg:grid-cols-2 lg:px-8">
-          <div className="flex flex-col gap-6 p-8 rounded-lg  border border-dashed-200 border-slate-100 lg:p-12  dark:bg-gray-800">
+        <div className="grid grid-2  mb-12  lg:grid-cols-2 lg:px-8">
+          <div className="flex flex-col gap-6 p-8 rounded-lg  border border-dashed-200 lg:p-12  dark:bg-gray-800 dark:border-0">
             <h1 className="text-lg font-semibold text-gray-900  dark:text-gray-100">
               {title}
             </h1>
@@ -79,7 +79,7 @@ const Content = (props) => {
             </div>
             <p>{svg}</p>
           </div>
-          <div className="bg-gray-100 flex  justify-center items-center dark:bg-gray-600">
+          <div className="bg-gray-100 flex rounded-lg  justify-center items-center dark:bg-gray-600">
             <img
               className="p-8 lg:p-12 w-120 h-96 rounded-lg  dark:bg-gray-600 "
               src={photo}
@@ -88,13 +88,13 @@ const Content = (props) => {
         </div>
       ) : (
         <div className="grid grid-2  mb-12 border-slate-300 lg:grid-cols-2 lg:px-8">
-          <div className="bg-gray-100 flex  justify-center items-center dark:bg-gray-600">
+          <div className="bg-gray-100 flex  justify-center items-center rounded-lg dark:bg-gray-600">
             <img
               className="p-8 dark:bg-gray-600 lg:p-12 w-120 h-96 rounded-lg "
               src={photo}
             />
           </div>
-          <div className="flex flex-col gap-6 p-8 rounded-lg  border border-dashed-200 border-slate-100 lg:p-12 dark:bg-gray-800">
+          <div className="flex flex-col gap-6 p-8 rounded-lg  border lg:p-12 dark:bg-gray-800 dark:border-0">
             <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
               {title}
             </h1>

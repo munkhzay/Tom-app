@@ -1,5 +1,5 @@
 import styles from "@/component/tomSty.module.css";
-import { Shadow } from "./Shadow";
+import { Shadow, Show } from "./Shadow";
 
 let heads = ["About", "Work", "Testimonials", "Contact"];
 
@@ -28,8 +28,8 @@ export const CV = () => {
           return <Headtext text={head}></Headtext>;
         })}
 
-        <Shadow className={styles.headshadow} />
-
+        <Shadow className="dark:" />
+        <Show className="hidden"></Show>
         <div>
           <button className="flex items-center text-white px-4 py-1 text-base bg-gray-950 rounded-2xl dark:bg-gray-100 dark:text-gray-950 ">
             Downloud CV

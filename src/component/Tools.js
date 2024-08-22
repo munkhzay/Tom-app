@@ -34,9 +34,9 @@ let apps = [
 const Tool = (props) => {
   const { text, icon } = props;
   return (
-    <div>
-      <p className="flex justify-center">{icon}</p>
-      <p className="text-center">{text}</p>
+    <div className="">
+      <p className="flex justify-center mb-2">{icon}</p>
+      <p className="text-center dark:text-gray-100">{text}</p>
     </div>
   );
 };

@@ -38,7 +38,7 @@ const Home = () => {
               src="Tom2.png"
             />
           </div>
-          <div className="lg:w-1/2 lg:pr-8">
+          <div className=" lg:ml-5 lg:w-1/2 lg:pr-8">
             <Tomcareer></Tomcareer>
           </div>
         </div>
@@ -90,9 +90,9 @@ const Home = () => {
           <Actions></Actions>
         </div>
       </div>
-      <div className=" flex justify-center items-center py-6 bg-gray-50">
+      <div className=" flex justify-center items-center py-6 bg-gray-50 dark:bg-gray-800">
         <Csign></Csign>
-        <p className="text-sm text-gray-600 font-normal">
+        <p className="text-sm text-gray-600 font-normal dark:text-gray-200">
           2024 | Greetings with ❤️️ from Ulaanbaatar
         </p>
       </div>
