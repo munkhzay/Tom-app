@@ -5,10 +5,10 @@ import { Shadow } from "./Shadow";
 export const Tomintroduction = () => {
   return (
     <div className="gap-y-2">
-      <h1 className="text-4xl font-semibold text-grey-900 lg:text-6xl lg:font-bold">
+      <h1 className="text-4xl font-semibold text-grey-900 lg:text-6xl lg:font-bold dark:text-gray-200">
         Hi, Im Tom{" "}
       </h1>
-      <p className="text-gray-600 text base font-normal">
+      <p className="text-gray-600 text base font-normal dark:text-gray-400">
         I specialize in full stack development, particulary with React.js and
         Node .js. My main goal is to create exceptional dijital experiences that
         are fast, visusally appealing, and accessible to everyone. With over
@@ -23,13 +23,13 @@ export const Location = () => {
     <div className="gap-y-2">
       <div className="flex gap-x-2">
         <Locationsvg></Locationsvg>
-        <p className="text-gray-600 text-base font-normal">
+        <p className="text-gray-600 text-base font-normal  dark:text-gray-400">
           Ulaanbaatar, Mongolia
         </p>
       </div>
       <div className="flex gap-x-2">
         <Shadow></Shadow>
-        <p className="text-gray-600 text-base font-normal">
+        <p className="text-gray-600 text-base font-normal  dark:text-gray-400">
           Available for new project
         </p>
       </div>
@@ -39,10 +39,10 @@ export const Location = () => {
 export const Tomcareer = () => {
   return (
     <div className="text-start gap-y-6">
-      <div className="text-2xl font-semibold text-gray-900 mb-6 lg:text-3xl">
+      <div className="text-2xl font-semibold text-gray-900 mb-6 lg:text-3xl dark:text-gray-50">
         Curious about me? Here you have it:
       </div>
-      <div className="flex flex-col space-y-4 text-base font-normal text-gray-600 gap-y-4">
+      <div className="flex flex-col space-y-4 text-base font-normal text-gray-600 gap-y-4 dark:text-gray-400">
         <div>
           I'm a designer turned full stack developer, passionate about React.js
           and Node.js. I excel in blending technical and visual aspects to craft

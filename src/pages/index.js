@@ -8,12 +8,13 @@ import { Work } from "@/component/Upwork";
 import { ProWork } from "@/component/Work";
 import { Texts } from "@/component/Text";
 import { Connect } from "@/component/Connect";
-
+import { Csign } from "@/component/Icons/Mail";
 const Home = () => {
   return (
-    <div className="">
+    <div className="bg-white dark:bg-black">
       <div className="flex justify-between lg:px-20 lg:py-4">
-        <TOM></TOM>
+        {/* <TOM></TOM> */}
+        <p className="text-3xl font-black dark:text-white">TOM</p>
         <Kebab></Kebab>
         <CV></CV>
       </div>
@@ -28,11 +29,14 @@ const Home = () => {
           <Actions></Actions>
         </div>
       </div>
-      <div className="bg-gray-50 text-center  py-16 px-4 lg:py-24 lg:px-20">
+      <div className="bg-gray-50 text-center  py-16 px-4 lg:py-24 lg:px-20 dark:bg-gray-900">
         <Texts text={"About me"}></Texts>
         <div className="gap-y-12 lg:flex lg:">
           <div className="flex justify-center lg:w-1/2 lg:pl-8 lg:justify-start">
-            <img className="w-auto h-auto mb-12 " src="Tom2.png" />
+            <img
+              className="w-auto h-auto mb-12 border-l-8 border-b-8  border-gray-200"
+              src="Tom2.png"
+            />
           </div>
           <div className="lg:w-1/2 lg:pr-8">
             <Tomcareer></Tomcareer>
@@ -50,7 +54,7 @@ const Home = () => {
           <Code></Code>
         </div>
       </div>
-      <div className="bg-gray-50 py-16 px-4 lg:py-24 lg:px-20">
+      <div className="bg-gray-50 py-16 px-4 lg:py-24 lg:px-20 dark:bg-gray-900">
         <div>
           <Texts
             text={"Experience"}
@@ -68,7 +72,7 @@ const Home = () => {
         ></Texts>
         <ProWork></ProWork>
       </div>
-      <div>
+      <div className="py-16 px-4 lg:py-24 lg:px-20">
         <Texts
           text={"Get in touch"}
           para={
@@ -79,12 +83,18 @@ const Home = () => {
           <Connect></Connect>
         </div>
 
-        <p className=" text-center font-normal text-gray-600 text-lg">
+        <p className=" text-center font-normal text-gray-600 text-lg dark: dark:text-gray-400">
           You may also find me on these platforms!
         </p>
         <div className="flex justify-center">
           <Actions></Actions>
         </div>
+      </div>
+      <div className=" flex justify-center items-center py-6 bg-gray-50">
+        <Csign></Csign>
+        <p className="text-sm text-gray-600 font-normal">
+          2024 | Greetings with ❤️️ from Ulaanbaatar
+        </p>
       </div>
     </div>
   );

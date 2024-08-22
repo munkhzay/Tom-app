@@ -38,23 +38,33 @@ let datas = [
 //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",},]
 
 const List = (props) => {
-  let { skill } = props;
+  let { skill, experience } = props;
   return (
-    <li className="px-8 text-base font-normal text-gray-700 mb-1 lg:text-center">
-      {skill}
-    </li>
+    <div>
+      <div className=" mb-4 text-lg font-semibold text-gray-900 lg:text-center ">
+        {experience}
+      </div>
+      <li className="px-8 dark:text-gray-300 text-base font-normal text-gray-700 mb-1 lg:text-center">
+        {skill}
+      </li>
+    </div>
   );
 };
 const Name = (props) => {
-  const { head, date, experience } = props;
+  const { head, date, experience, data, skills } = props;
   return (
     <div className="lg:flex justify-between ">
       <div>{head}</div>
-      <div className="lg:flex lg:flex-row-reverse gap-40  ">
-        <div className="mb-4 text-base font-normal text-gray-700">{date}</div>
-        <div className="mb-4 text-lg font-semibold text-gray-900 lg:text-center ">
+      <div className="lg:flex lg:flex-row-reverse gap-52 ">
+        <div className="mb-4 text-base font-normal text-gray-700  dark:text-gray-300">
+          {date}
+        </div>
+        <div className="mb-4 text-lg font-semibold text-gray-900  dark:text-gray-200 lg:text-center ">
           {experience}
         </div>
+        {/* {data.skills.map((skill) => {
+          return <List skill={skill}></List>;
+        })} */}
       </div>
     </div>
   );
@@ -64,12 +74,13 @@ export const Work = () => {
     <div className="lg:px-8">
       {datas.map((data) => {
         return (
-          <div className="p-8 bg-white rounded-xl mb-6 lg:mb-12 lg:mx-8 ">
+          <div className="p-8 bg-white rounded-xl mb-6 ,  dark:bg-gray-800 lg:mb-12 lg:mx-8 ">
             <Name
               head={data.head}
               date={data.date}
               experience={data.experience}
             ></Name>
+
             {data.skills.map((skill) => {
               return <List skill={skill}></List>;
             })}

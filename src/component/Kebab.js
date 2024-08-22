@@ -11,22 +11,22 @@ export const Kebab = () => {
         <path
           d="M4 12H20"
           stroke="#4B5563"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWinecap="2"
+          strokeLinecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M4 6H20"
           stroke="#4B5563"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWinecap="2"
+          strokeLinecap="round"
           stroke-linejoin="round"
         />
         <path
           d="M4 18H20"
           stroke="#4B5563"
-          stroke-width="2"
-          stroke-linecap="round"
+          strokeWinecap="2"
+          strokeLinecap="round"
           stroke-linejoin="round"
         />
       </svg>
