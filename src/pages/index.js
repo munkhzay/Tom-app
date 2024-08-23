@@ -9,9 +9,11 @@ import { ProWork } from "@/component/Work";
 import { Texts } from "@/component/Text";
 import { Connect } from "@/component/Connect";
 import { Csign } from "@/component/Icons/Mail";
+// import { Experience } from "@/component/Upwork2";
+
 const Home = () => {
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-white mx-4 dark:bg-black xl:max-w-[1280px] xl:m-auto">
       <div className="flex justify-between lg:px-20 lg:py-4">
         {/* <TOM></TOM> */}
         <p className="text-3xl font-black dark:text-white">TOM</p>
@@ -34,7 +36,7 @@ const Home = () => {
         <div className="gap-y-12 lg:flex lg:">
           <div className="flex justify-center lg:w-1/2 lg:pl-8 lg:justify-start">
             <img
-              className="w-auto h-auto mb-12 border-l-8 border-b-8  border-gray-200"
+              className="w-auto h-auto mb-12 border-l-[25px] border-b-[25px]  border-gray-200"
               src="Tom2.png"
             />
           </div>
@@ -96,6 +98,7 @@ const Home = () => {
           2024 | Greetings with ❤️️ from Ulaanbaatar
         </p>
       </div>
+      {/* <Experience></Experience> */}
     </div>
   );
 };

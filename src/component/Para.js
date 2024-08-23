@@ -6,7 +6,7 @@ export const Tomintroduction = () => {
   return (
     <div className="gap-y-2">
       <h1 className="text-4xl font-semibold text-grey-900 lg:text-6xl lg:font-bold dark:text-gray-200">
-        Hi, Im Tom{" "}
+        Hi, I'm Tom 👋
       </h1>
       <p className="text-gray-600 text base font-normal dark:text-gray-400">
         I specialize in full stack development, particulary with React.js and
@@ -28,8 +28,8 @@ export const Location = () => {
         </p>
       </div>
       <div className="flex gap-x-2">
-        <Shadow></Shadow>
-        <p className="text-gray-600 text-base font-normal  dark:text-gray-400">
+        <div className="w-2 h-2 rounded-md border-0 bg-emerald-500 ml-2 mt-2 "></div>
+        <p className="text-gray-600 text-base font-normal ml-2 dark:text-gray-400">
           Available for new project
         </p>
       </div>

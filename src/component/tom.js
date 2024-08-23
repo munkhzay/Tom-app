@@ -4,7 +4,7 @@ import { Shadow, Show } from "./Shadow";
 let heads = ["About", "Work", "Testimonials", "Contact"];
 
 const Headtext = (props) => {
-  const { text } = props;
+  const { text, index } = props;
   return (
     <div className="text-base text-gray-600 dark:text-gray-400 content-center">
       {text}
@@ -24,10 +24,9 @@ export const CV = () => {
   return (
     <div className="sm: hidden lg:block">
       <div className="flex flex-row gap-5 sm:max-hidden ">
-        {heads.map((head) => {
-          return <Headtext text={head}></Headtext>;
+        {heads.map((head, index) => {
+          return <Headtext key={index} text={head}></Headtext>;
         })}
-
         <Shadow className="dark:" />
         <Show className="hidden"></Show>
         <div>
