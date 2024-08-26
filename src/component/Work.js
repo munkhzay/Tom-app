@@ -125,7 +125,7 @@ const Content = (props) => {
           </div>
           <div className="bg-gray-100 flex rounded-lg  justify-center items-center dark:bg-gray-600">
             <img
-              className="p-8 lg:p-12 w-120 h-96 rounded-lg  dark:bg-gray-600 "
+              className="p-8 lg:p-12 rounded-lg  dark:bg-gray-600 "
               src={photo}
             />
           </div>
@@ -137,7 +137,7 @@ const Content = (props) => {
       <div className="grid grid-2  mb-12 border-slate-300 lg:grid-cols-2 lg:px-8">
         <div className="bg-gray-100 flex  justify-center items-center rounded-lg dark:bg-gray-600">
           <img
-            className="p-8 dark:bg-gray-600 lg:p-12 w-120 h-96 rounded-lg "
+            className="p-8 dark:bg-gray-600 lg:p-12  rounded-lg "
             src={photo}
           />
         </div>

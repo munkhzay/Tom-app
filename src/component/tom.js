@@ -6,7 +6,7 @@ let heads = ["About", "Work", "Testimonials", "Contact"];
 const Headtext = (props) => {
   const { text, index } = props;
   return (
-    <div className="text-base text-gray-600 dark:text-gray-400 content-center">
+    <div className="text-base text-gray-900 dark:text-gray-400 content-center">
       {text}
     </div>
   );

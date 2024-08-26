@@ -9,6 +9,7 @@ import { ProWork } from "@/component/Work";
 import { Texts } from "@/component/Text";
 import { Connect } from "@/component/Connect";
 import { Csign } from "@/component/Icons/Mail";
+
 // import { Experience } from "@/component/Upwork2";
 
 const Home = () => {
@@ -16,6 +17,32 @@ const Home = () => {
     <div className="bg-white mx-4 dark:bg-black xl:max-w-[1280px] xl:m-auto">
       <div className="flex justify-between lg:px-20 lg:py-4">
         {/* <TOM></TOM> */}
+        {/* <div className="drawer">
+          <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+          <div className="drawer-content">
+            <label
+              htmlFor="my-drawer"
+              className="btn btn-primary drawer-button"
+            >
+              Open drawer
+            </label>
+          </div>
+          <div className="drawer-side">
+            <label
+              htmlFor="my-drawer"
+              aria-label="close sidebar"
+              className="drawer-overlay"
+            ></label>
+            <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+              <li>
+                <a>Sidebar Item 1</a>
+              </li>
+              <li>
+                <a>Sidebar Item 2</a>
+              </li>
+            </ul>
+          </div>
+        </div> */}
         <p className="text-3xl font-black dark:text-white">TOM</p>
         <Kebab></Kebab>
         <CV></CV>

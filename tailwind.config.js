@@ -9,6 +9,7 @@ module.exports = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  plugins: [require("daisyui")],
   theme: {
     screens: {
       sm: "640px",
