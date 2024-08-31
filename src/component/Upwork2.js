@@ -61,19 +61,19 @@ let datas = [
 export const Experience = () => {
   return (
     <div>
-      {datas.map((data) => {
+      {datas.map((data, index) => {
         const { head, date, experience } = data;
         return (
-          <div>
+          <div key={index}>
             <div>{head}</div>
             <div>
               <div>{date}</div>
               <div>
                 <div>{experience}</div>
 
-                {data.skills.map((skill) => {
+                {data.skills.map((skill, index) => {
                   return (
-                    <url>
+                    <url key={index}>
                       <li>{skill}</li>
                     </url>
                   );

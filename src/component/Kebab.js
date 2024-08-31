@@ -67,8 +67,8 @@ export const Kebab = () => {
             </div>
             <li className="border-t">
               {/* Sidebar content here */}
-              {heads.map((head) => {
-                return <Headtext text={head}></Headtext>;
+              {heads.map((head, index) => {
+                return <Headtext key={index} text={head}></Headtext>;
               })}{" "}
               <div className="border-t p-1 gap-5 flex flex-col ">
                 <div className="flex items-center text-base text-gray-600 dark:text-gray-600 font-thin px-1 pt-5">
@@ -77,7 +77,7 @@ export const Kebab = () => {
                   <Show className="hidden"></Show>
                 </div>
                 <div className="pb-4">
-                  <button className="min-w-72 flex items-center justify-center text-white  px-4 py-2 text-base bg-gray-950 rounded-xl  dark:bg-gray-100 dark:text-gray-900 ">
+                  <button className="min-w-72 flex items-center justify-center text-white  px-4 py-2 text-base bg-gray-950 rounded-xl  dark:bg-gray-100 dark:text-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
                     Downloud CV
                   </button>
                 </div>

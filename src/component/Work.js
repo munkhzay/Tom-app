@@ -117,8 +117,8 @@ const Content = (props) => {
               {para}
             </p>
             <div className="flex flex-wrap gap-2">
-              {skills.map((skill) => {
-                return <Codesapp skill={skill}></Codesapp>;
+              {skills.map((skill, index) => {
+                return <Codesapp key={index} skill={skill}></Codesapp>;
               })}
             </div>
             <p>{svg}</p>
@@ -150,8 +150,8 @@ const Content = (props) => {
             {para}
           </p>
           <div className="flex flex-wrap gap-2">
-            {skills.map((skill) => {
-              return <Codesapp skill={skill}></Codesapp>;
+            {skills.map((skill, index) => {
+              return <Codesapp key={index} skill={skill}></Codesapp>;
             })}
           </div>
           <p>{svg}</p>

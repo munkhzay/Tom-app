@@ -104,10 +104,13 @@ let datas = [
 export const Work = () => {
   return (
     <div className="">
-      {datas.map((data) => {
+      {datas.map((data, index) => {
         const { head, date, experience } = data;
         return (
-          <div className="p-8 bg-white rounded-xl mb-6 ,  dark:bg-gray-800  lg:mb-12 lg:mx-8 lg:flex lg:justify-center items-center">
+          <div
+            key={index}
+            className="p-8 bg-white rounded-xl mb-6 ,  dark:bg-gray-800  lg:mb-12 lg:mx-8 lg:flex lg:justify-center items-center"
+          >
             <div className="lg:flex lg:gap-12 ">
               <div>{head}</div>
               <div className="lg:flex lg:flex-row-reverse ">
@@ -117,9 +120,9 @@ export const Work = () => {
 
                 <div className="mb-4 text-lg font-semibold text-gray-900  dark:text-gray-200 lg:text-start">
                   {experience}
-                  {data.skills.map((skill) => {
+                  {data.skills.map((skill, index) => {
                     return (
-                      <url>
+                      <url key={index}>
                         <li className="px-8 dark:text-gray-300 text-base font-normal text-gray-700 mb-1 lg:w-[492px]">
                           {skill}
                         </li>
