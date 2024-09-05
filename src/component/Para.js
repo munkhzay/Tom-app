@@ -6,7 +6,7 @@ export const Tomintroduction = () => {
   return (
     <div className="gap-y-2">
       <h1 className="text-4xl font-semibold text-grey-900 lg:text-6xl lg:font-bold dark:text-gray-200">
-        Hi, I'm Tom 👋
+        Hi, Im Tom 👋
       </h1>
       <p className="text-gray-600 text base font-normal dark:text-gray-400">
         I specialize in full stack development, particulary with React.js and
@@ -44,20 +44,20 @@ export const Tomcareer = () => {
       </div>
       <div className="flex flex-col space-y-4 text-base font-normal text-gray-600 gap-y-4 dark:text-gray-400">
         <div>
-          I'm a designer turned full stack developer, passionate about React.js
+          Im a designer turned full stack developer, passionate about React.js
           and Node.js. I excel in blending technical and visual aspects to craft
           exceptional digital products, prioritizing user experience, precise
           design, and optimized code.
         </div>
         <div>
-          Since starting my web development journey in 2015, I've embraced
+          Since starting my web development journey in 2015, Ive embraced
           challenges and kept up with the latest tech trends. Now in my early
-          thirties, seven years in, I'm building cutting-edge web apps using
+          thirties, seven years in, Im building cutting-edge web apps using
           Next.js, TypeScript, Nestjs, Tailwindcss, Supabase, and more.
         </div>
         <div>
           With a progressive mindset, I enjoy the entire product development
-          process, from ideation to execution. Off duty, you'll find me on
+          process, from ideation to execution. Off duty, youll find me on
           Twitter, tracking startup journeys, or unwinding. Follow me for tech
           insights and public project updates on Twitter or GitHub.
         </div>
@@ -72,8 +72,8 @@ export const Tomcareer = () => {
           </div>
         </div>
         <div>
-          One last thing, I'm available for freelance work, so feel free to
-          reach out and say hello! I promise I don't bite 😉
+          One last thing, Im available for freelance work, so feel free to reach
+          out and say hello! I promise I do not bite 😉
         </div>
       </div>
     </div>
