@@ -60,47 +60,6 @@ const projectDatas = [
   },
 ];
 
-// const Workmode = () => {
-//   if (document.documentElement.classList.contains("lg")) return {
-//   } else { <Content></Content>
-//     document.documentElement.classList.add("sm");
-//   }
-// };
-
-// export const Workcontent = () => {
-//   if (document.documentElement.classList.contains("lg")) return;
-//   <Content></Content>;
-//   if (document.documentElement.classList.add("sm"))
-//     return <Content2></Content2>;
-// };
-// const Content2 = (props) => {
-//   const { photo, title, para, skills, svg, index } = props;
-//   return (
-//     <div className="grid grid-2  mb-12 border-slate-300 lg:grid-cols-2 lg:px-8">
-//       <div className="bg-gray-100 flex  justify-center items-center rounded-lg dark:bg-gray-600">
-//         <img
-//           className="p-8 dark:bg-gray-600 lg:p-12 w-120 h-96 rounded-lg "
-//           src={photo}
-//         />
-//       </div>
-//       <div className="flex flex-col gap-6 p-8 rounded-lg  border lg:p-12 dark:bg-gray-800 dark:border-0">
-//         <h1 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
-//           {title}
-//         </h1>
-
-//         <p className="text-base font-normal text-gray-700 dark:text-gray-400">
-//           {para}
-//         </p>
-//         <div className="flex flex-wrap gap-2">
-//           {skills.map((skill) => {
-//             return <Codesapp skill={skill}></Codesapp>;
-//           })}
-//         </div>
-//         <p>{svg}</p>
-//       </div>
-//     </div>
-//   );
-// };
 const Content = (props) => {
   {
     const { photo, title, para, skills, svg, index } = props;
@@ -160,6 +119,7 @@ const Content = (props) => {
     );
   }
 };
+
 const Codesapp = (props) => {
   const { skill } = props;
   return (
@@ -168,6 +128,7 @@ const Codesapp = (props) => {
     </div>
   );
 };
+
 export const ProWork = () => {
   return (
     <div className="mb-4">

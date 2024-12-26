@@ -4,7 +4,7 @@ import { Shadow, Show } from "./Shadow";
 let heads = ["About", "Work", "Testimonials", "Contact"];
 
 const Headtext = (props) => {
-  const { text, index } = props;
+  const { text } = props;
   return (
     <div className="text-base text-gray-900 dark:text-gray-400 content-center">
       {text}

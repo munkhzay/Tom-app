@@ -2,6 +2,7 @@ import { Shadow, Show } from "./Shadow";
 import { Delete } from "./Icons/x";
 
 const heads = ["About", "Work", "Testimonials", "Contact"];
+
 const Headtext = (props) => {
   const { text, index } = props;
   return (
@@ -10,6 +11,7 @@ const Headtext = (props) => {
     </div>
   );
 };
+
 export const Kebab = () => {
   return (
     <div className="sm:block lg:hidden ">
@@ -52,11 +54,7 @@ export const Kebab = () => {
           </label>
         </div>
         <div className="drawer-side">
-          <label
-            htmlFor="my-drawer"
-            // aria-label="close sidebar"
-            className="drawer-overlay"
-          ></label>
+          <label htmlFor="my-drawer" className="drawer-overlay"></label>
           <ul className="menu bg-base-100 text-base-content min-h-full w-full sm:px-8   dark:bg-[black]">
             {" "}
             <div className="flex justify-between items-center">
@@ -66,7 +64,6 @@ export const Kebab = () => {
               <Delete></Delete>
             </div>
             <li className="border-t">
-              {/* Sidebar content here */}
               {heads.map((head, index) => {
                 return <Headtext key={index} text={head}></Headtext>;
               })}{" "}

@@ -1,4 +1,4 @@
-import { Upwork } from "./Upworksvg";
+import { Upwork } from "./Icons/Upworksvg";
 let datas = [
   {
     id: 1,

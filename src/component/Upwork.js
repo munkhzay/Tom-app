@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Upwork } from "./Upworksvg";
 let datas = [
   {
     id: 1,

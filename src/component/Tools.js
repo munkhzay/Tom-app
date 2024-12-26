@@ -25,12 +25,11 @@ let apps = [
   { id: 9, text: "Story", icon: <Story /> },
   { id: 10, text: "MongoDB", icon: <Mongo /> },
   { id: 11, text: "Sass/Scss", icon: <Sass /> },
-
   { id: 13, text: "ReFigmaact", icon: <Figma /> },
   { id: 14, text: "Cypress", icon: <Cypress /> },
-
   { id: 16, text: "Git", icon: <Git /> },
 ];
+
 const Tool = (props) => {
   const { text, icon } = props;
   return (
@@ -40,6 +39,7 @@ const Tool = (props) => {
     </div>
   );
 };
+
 export const Code = () => {
   return (
     <div className=" grid grid-cols-3 lg:grid-cols-7 gap-y-12">
