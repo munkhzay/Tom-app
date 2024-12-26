@@ -31,7 +31,7 @@ export const CV = () => {
         <Show className="hidden"></Show>
         <div>
           <button className="flex items-center text-white px-4 py-1 text-base bg-gray-950 rounded-2xl dark:bg-gray-100 dark:text-gray-950 ">
-            Downloud CV
+            Download CV
           </button>
         </div>
       </div>

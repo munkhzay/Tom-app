@@ -78,7 +78,7 @@ export const Kebab = () => {
                 </div>
                 <div className="pb-4">
                   <button className="min-w-72 flex items-center justify-center text-white  px-4 py-2 text-base bg-gray-950 rounded-xl  dark:bg-gray-100 dark:text-gray-900 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
-                    Downloud CV
+                    Download CV
                   </button>
                 </div>
               </div>

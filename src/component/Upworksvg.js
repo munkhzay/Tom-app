@@ -1,6 +1,6 @@
 export const Upwork = () => {
   return (
-    <div className="flex items-start mb-4">
+    <div className="flex flex-row items-center justify-center">
       <svg
         width="37"
         height="23"
@@ -50,6 +50,7 @@ export const Upwork = () => {
         />
       </svg>
       <svg
+        className="bottom"
         width="15"
         height="22"
         viewBox="0 0 15 22"
